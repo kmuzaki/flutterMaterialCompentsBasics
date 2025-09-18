@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
       // TODO: Add app bar (102)
       // TODO: Add a grid view (102)
       body: Center(
-        child: Text('You did it!'),
+        child: Text("Let's go!!!!!!"),
       ),
       // TODO: Set resizeToAvoidBottomInset (101)
     );
