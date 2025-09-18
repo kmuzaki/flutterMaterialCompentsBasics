@@ -38,9 +38,30 @@ class _LoginPageState extends State<LoginPage> {
                 const Text('Hello Cadets'),
               ],
             ),
-            const SizedBox(height: 120.0),
+            const SizedBox(height: 50.0),
             // TODO: Remove filled: true values (103)
             // TODO: Add TextField widgets (101)
+            // [Name]
+            TextField(
+              decoration: const InputDecoration(
+                filled: true,
+                labelText: 'Username',
+              ),
+              cursorColor: Colors.black,
+            ),
+            // spacer
+            const SizedBox(height: 25.0),
+            // [Password]
+            TextField(
+              decoration: const InputDecoration(
+                filled: true,
+                labelText: 'Password (32 characters at max)',
+              ),
+              cursorColor: Theme.of(context).primaryColor,
+              obscureText: true,
+              maxLength: 32,
+            ),
+
             // TODO: Add button bar (101)
           ],
         ),
