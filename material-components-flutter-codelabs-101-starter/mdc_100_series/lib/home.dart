@@ -101,7 +101,7 @@ class HomePage extends StatelessWidget {
           },
         ),
 
-        title: const Text('SHRINE'),
+        title: const Text("Diamond Heights' shop"),
         // TODO: Add trailing buttons (102)
         actions: <Widget>[
           IconButton(
