@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'colors.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -39,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
                 Image.asset('assets/rollerCoaster.png'),
                 const SizedBox(height: 16.0),
                 Text(
-                  'SHRINE',
+                  'Welcome, visitor!',
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ],
@@ -92,10 +93,15 @@ class _LoginPageState extends State<LoginPage> {
                 ElevatedButton(
                   child: const Text('NEXT'),
                   onPressed: () {
-                // TODO: Show the next page (101) 
-                  Navigator.pop(context);
+                    Navigator.pop(context);
                   },
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: kShrineBrown900,
+                    backgroundColor: kShrinePink100,
+                    elevation: 8.0,
+                  ),
                 ),
+
 
               ],
             ),
