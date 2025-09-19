@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 80.0),
             Column(
               children: <Widget>[
-                Image.asset('assets/diamond.png'),
+                Image.asset('assets/rollerCoaster.png'),
                 const SizedBox(height: 16.0),
                 Text(
                   'SHRINE',
@@ -51,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
             TextField(
               controller: _usernameController,
               decoration: const InputDecoration(
-                filled: true,
+                // Remove filled: true,
                 labelText: 'Username',
               ),
               cursorColor: Colors.black,
@@ -62,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
             TextField(
               controller: _passwordController,
               decoration: const InputDecoration(
-                filled: true,
+                // Remove filled: true,
                 labelText: 'Password (32 characters at max)',
               ),
               cursorColor: Theme.of(context).primaryColor,
@@ -77,13 +77,16 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 // TODO: Add buttons (101)
                 TextButton(
-                  child: const Text('CANCEL'),
-                  onPressed: () {
-                    // TODO: Clear the text fields (101)
-                    _usernameController.clear();
-                    _passwordController.clear();
-                  },
-                ),
+                    child: const Text('CANCEL'),
+                    onPressed: () {
+                      _usernameController.clear();
+                      _passwordController.clear();
+                    },
+                    style: TextButton.styleFrom(
+                      foregroundColor: Theme.of(context).colorScheme.secondary,
+                    ),
+                  ),
+
                 // TODO: Add an elevation to NEXT (103)
                 // TODO: Add a beveled rectangular border to NEXT (103)
                 ElevatedButton(
