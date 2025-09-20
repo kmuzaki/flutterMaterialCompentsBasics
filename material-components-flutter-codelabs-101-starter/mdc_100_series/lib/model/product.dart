@@ -16,7 +16,8 @@ enum Category {
   all,
   accessories,
   clothing,
-  home,
+  home, 
+  tickets,
 }
 
 class Product {
