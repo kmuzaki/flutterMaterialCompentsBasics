@@ -38,9 +38,9 @@ class _LoginPageState extends State<LoginPage> {
             Column(
               children: <Widget>[
                 Image.asset('assets/rollerCoaster.png'),
-                const SizedBox(height: 16.0),
+                const SizedBox(height: 20.0),
                 Text(
-                  'Welcome, visitor!',
+                  "Welcome to Diamond Heights' Shop, visitor!",
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ],

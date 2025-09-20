@@ -95,8 +95,8 @@ class _ShrineAppState extends State<ShrineApp> {
               currentCategory: _currentCategory,
               onCategoryTap: _onCategoryTap,
             ),
-            frontTitle: const Text('SHRINE'),
-            backTitle: const Text('MENU'),
+            frontTitle: const Text('Shop'),
+            backTitle: const Text('Select category'),
           ),
 
       },
