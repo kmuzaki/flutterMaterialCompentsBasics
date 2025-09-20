@@ -31,8 +31,17 @@ flutter:
     - assets/rollerCoaster.png
     - assets/diamond.png
 
-    # TODO: Add slanted menu asset (104)
+    # slanted menu icon
     - assets/slanted_menu.png
+
+    # product images
+    - assets/products/0-0.jpg
+    - assets/products/1-0.jpg
+    - assets/products/2-0.jpg
+    - assets/products/3-0.jpg
+    - assets/products/4-0.jpg
+    - assets/products/5-0.jpg
+    - assets/products/6-0.jpg
 
     - packages/shrine_images/0-0.jpg
     - packages/shrine_images/1-0.jpg

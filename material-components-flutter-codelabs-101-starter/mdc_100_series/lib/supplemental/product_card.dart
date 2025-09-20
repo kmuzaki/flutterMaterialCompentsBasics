@@ -35,8 +35,10 @@ class ProductCard extends StatelessWidget {
     final ThemeData theme = Theme.of(context);
 
     final imageWidget = Image.asset(
-      product.assetName,
-      package: product.assetPackage,
+      product.assetName.startsWith('assets/products/')
+          ? product.assetName
+          : 'assets/products/${product.assetName}',
+      // package: product.assetPackage,
       fit: BoxFit.cover,
     );
 
