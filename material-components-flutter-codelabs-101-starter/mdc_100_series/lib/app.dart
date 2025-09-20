@@ -29,29 +29,29 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light(useMaterial3: true);
   return base.copyWith(
     colorScheme: base.colorScheme.copyWith(
-      primary: kShrinePink100,
-      onPrimary: kShrineBrown900,
-      secondary: kShrineBrown900,
-      error: kShrineErrorRed,
+      primary: dHParkCyanMain,
+      onPrimary: dhParkDarkOrange,
+      secondary: dhParkDarkOrange,
+      error: dHParkErrorRed,
     ),
     textTheme: _buildShrineTextTheme(base.textTheme),
     textSelectionTheme: const TextSelectionThemeData(
-      selectionColor: kShrinePink100,
+      selectionColor: dHParkCyanMain,
     ),
     appBarTheme: const AppBarTheme(
-      foregroundColor: kShrineBrown900,
-      backgroundColor: kShrinePink100,
+      foregroundColor: dhParkDarkOrange,
+      backgroundColor: dHParkCyanMain,
     ),
     inputDecorationTheme: const InputDecorationTheme(
       border: CutCornersBorder(),
       focusedBorder: CutCornersBorder(
         borderSide: BorderSide(
           width: 2.0,
-          color: kShrineBrown900,
+          color: dhParkDarkOrange,
         ),
       ),
       floatingLabelStyle: TextStyle(
-        color: kShrineBrown900,
+        color: dhParkDarkOrange,
       ),
     ),
   );

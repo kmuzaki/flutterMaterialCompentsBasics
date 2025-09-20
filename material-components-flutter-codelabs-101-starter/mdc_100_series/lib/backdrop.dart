@@ -108,7 +108,7 @@ class _BackdropTitle extends AnimatedWidget {
                   begin: Offset.zero,
                   end: const Offset(1.0, 0.0),
                 ).evaluate(animation),
-                child: const ImageIcon(AssetImage('assets/diamond.png')),
+                child: const ImageIcon(AssetImage('assets/rollerCoaster.png')),
               )]),
           ),
         ),

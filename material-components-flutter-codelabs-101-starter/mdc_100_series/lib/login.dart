@@ -30,6 +30,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: dhParkYellow,
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -84,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                     _passwordController.clear();
                   },
                   style: TextButton.styleFrom(
-                    foregroundColor: kShrineBrown900,
+                    foregroundColor: dhParkDarkOrange,
                     shape: const BeveledRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(7.0)),
                     ),
@@ -100,8 +101,8 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.pop(context);
                   },
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: kShrineBrown900,
-                    backgroundColor: kShrinePink100,
+                    foregroundColor: dhParkDarkOrange,
+                    backgroundColor: dHParkCyanMain,
                     elevation: 8.0,
                     shape: const BeveledRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(7.0)),
